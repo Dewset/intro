@@ -3,10 +3,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>title</title>
     <link href="./public/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
 
   <body>
-      <div class="content">
+      <div class="content_block">
         <h1><strong>
           title
         </strong></h1>
@@ -32,15 +34,53 @@
           </em>
         </p>
         <p style="text-align: center; font-size: 20px;">
-          <a href="https://arxiv.org" target="_blank">[Paper]</a>
-          &nbsp;&nbsp;&nbsp;
+          <span class="link-block">
+            <a href="https://arxiv.org"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+            </a>
+        </span>
+        <span class="link-block">
+          <a href="https://github.com"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+          </a>
+      </span>
+      <!-- Dataset Link. -->
+      <span class="link-block">
+          <a href="https://github.com"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="far fa-file"></i>
+              </span>
+              <span>Data</span>
+          </a>
+        </span>
+        <!-- BibTeX Link. -->
+      <span class="link-block">
+        <a href="./public/bibtex.txt"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+                <i class="far fa-file"></i>
+            </span>
+            <span>BibTeX</span>
+        </a>
+      </span>
+          <!-- <a href="https://arxiv.org" target="_blank">[Paper]</a> -->
+          <!-- &nbsp;&nbsp;&nbsp;
           <a href="./public/bibtex.txt" target="_blank">[BibTeX]</a>
           &nbsp;&nbsp;&nbsp;
-          <a href="https://github.com" target="_blank">[Code]</a>
+          <a href="https://github.com" target="_blank">[Code]</a> -->
         </p>
       </div>
 
-      <div class="content">
+      <div class="content_block">
         <h2 style="text-align: center;">Abstract</h2>
         <p>
           Abstract here
@@ -61,7 +101,7 @@
         Let's say you have a library of 100 images. Theoretically, with Composer, you have about <strong>100<sup>8</sup></strong> ways to combine these images to create new works.
       </div> -->
 
-      <div class="content">
+      <div class="content_block">
         <h2>methods</h2>
         <p style="font-size: 18px">
           method 1
@@ -86,7 +126,7 @@
         </p>
       </div>
 
-      <div class="content">
+      <div class="content_block">
         <h2>Experiments</h2>
         <p style="font-size: 18px">
           Experiments 1
@@ -105,7 +145,7 @@
         </p>
       </div>
 
-      <div class="content">
+      <div class="content_block">
         <h2>Conclusion</h2>
         <p style="font-size: 18px">
           <strong>Conclusion 1</strong>.
@@ -121,10 +161,180 @@
         </p>
       </div>
 
-      <div class="content">
+      <div class="content_block">
         <h2>BibTex</h2>
         <code> </code>
       </div>
-      <br><br>
+      <div class="content_card">
+        <div class="card">
+          <header class="card-header">
+              <p class="card-header-title">
+                  Q. What?
+              </p>
+              <a class="card-header-icon">
+                  <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </header>
+          <div class="card-content is-hidden">
+              <div class="content">
+                  1
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <header class="card-header">
+              <p class="card-header-title">
+                  Q. Why?
+              </p>
+              <a class="card-header-icon">
+                  <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </header>
+          <div class="card-content is-hidden">
+              <div class="content">
+                  2
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <header class="card-header">
+              <p class="card-header-title">
+                  Q. Why?
+              </p>
+              <a class="card-header-icon">
+                  <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </header>
+          <div class="card-content is-hidden">
+              <div class="content">
+                  3
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <header class="card-header">
+              <p class="card-header-title">
+                  Q. What?
+              </p>
+              <a class="card-header-icon">
+                  <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </header>
+          <div class="card-content is-hidden">
+              <div class="content">
+                  4
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <header class="card-header">
+              <p class="card-header-title">
+                  Q. Who?
+              </p>
+              <a class="card-header-icon">
+                  <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </header>
+          <div class="card-content is-hidden">
+              <div class="content">
+                  5
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <header class="card-header">
+              <p class="card-header-title">
+                  Q. How?
+              </p>
+              <a class="card-header-icon">
+                  <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </header>
+          <div class="card-content is-hidden">
+              <div class="content">
+                 6
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <header class="card-header">
+              <p class="card-header-title">
+                  Q. What?
+              </p>
+              <a class="card-header-icon">
+                  <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </header>
+          <div class="card-content is-hidden">
+              <div class="content">
+                  7
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <header class="card-header">
+              <p class="card-header-title">
+                  Q. How?
+              </p>
+              <a class="card-header-icon">
+                  <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </header>
+          <div class="card-content is-hidden">
+              <div class="content">
+                  8
+              </div>
+          </div>
+      </div>
+    </div>
   </body>
 </html>
+<script>
+  const faqs = document.querySelectorAll('.card-header');
+
+faqs.forEach(faq => {
+faq.addEventListener('click', () => {
+const content = faq.nextElementSibling;
+
+faq.classList.toggle('is-active');
+content.classList.toggle('is-hidden');
+
+// Smooth transition
+if (content.classList.contains('is-hidden')) {
+  content.style.maxHeight = 0;
+} else {
+  content.style.maxHeight = content.scrollHeight + "px";
+}
+});
+});
+
+// Fold all FAQs initially
+const cardContents = document.querySelectorAll('.card-content');
+
+cardContents.forEach(content => {
+content.style.maxHeight = 0;
+});
+</script>
